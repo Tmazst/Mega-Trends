@@ -23,6 +23,7 @@ section { padding: 70px 0; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card { border: 1px solid var(--color-border); border-radius: 8px; padding: 25px; background: white; }
 .muted { background: var(--color-surface); }
+.dark-bg { background: var(--color-dark); }
 footer { background: var(--color-dark); color: white; padding: 35px 0; }
 @media(max-width: 700px) { .grid { grid-template-columns: 1fr; } .hero { padding: 65px 0; } }
 
@@ -30,5 +31,5 @@ footer { background: var(--color-dark); color: white; padding: 35px 0; }
 :root { --font-family: "Poppins", sans-serif; --icon-color: var(--color-primary); }
 body, button, input, select, textarea { font-family: var(--font-family); }
 nav i { color: var(--icon-color); margin-right: 4px; font-size: 0.85em; }
-.service-icon { display: inline-flex; align-items: center; justify-content: center; color: var(--icon-color); background: var(--color-surface); width: 48px; height: 48px; border-radius: 10px; font-size: 22px; }
+.service-icon { display: inline-flex; align-items: center; justify-content: center; color: var(--icon-color); width: 48px; height: 48px; border-radius: 10px; font-size: 22px; }
 .card h3 { margin-top: 16px; }
