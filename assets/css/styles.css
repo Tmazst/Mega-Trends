@@ -1,6 +1,16 @@
-:root { --color-primary: #ed2228; --color-dark: #10151b; --color-bg: #ffffff; --color-surface: #f5f6f8; --color-text: #242b33; --color-muted: #65707c; --color-border: #e7e9ed; }
+:root { 
+    --color-primary: #e8672b; 
+    --color-dark: #0d204b; 
+    --color-bg: #ffffff; 
+    --color-surface: #f5f6f8; 
+    --color-text: #242b33; 
+    --color-muted: #65707c; 
+    --color-border: #e7e9ed; }
 * { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; color: var(--color-text); background: var(--color-bg); }
+body { margin: 0;
+     font-family: Arial, sans-serif; 
+     color: var(--color-text); 
+     background: var(--color-bg); }
 .container { max-width: 1180px; margin: auto; padding: 0 24px; }
 header { padding: 20px 0; border-bottom: 1px solid var(--color-border); }
 nav { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
