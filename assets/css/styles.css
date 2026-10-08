@@ -33,3 +33,22 @@ body, button, input, select, textarea { font-family: var(--font-family); }
 nav i { color: var(--icon-color); margin-right: 4px; font-size: 0.85em; }
 .service-icon { display: inline-flex; align-items: center; justify-content: center; color: var(--icon-color); width: 48px; height: 48px; border-radius: 10px; font-size: 22px; }
 .card h3 { margin-top: 16px; }
+
+/* Homepage visual refinement: retain user-selected orange/navy palette */
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{line-height:1.7}h1,h2,h3{line-height:1.2}h2{font-size:clamp(28px,3.5vw,44px)}
+header{position:sticky;top:0;z-index:20;background:var(--color-bg);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+header nav{min-height:46px;justify-content:space-between}header nav strong{margin-right:auto;color:var(--color-dark);font-size:17px}
+header nav a{font-size:13px;font-weight:600}header nav a:hover{color:var(--color-primary)}
+.hero{min-height:570px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(5,18,44,.96),rgba(5,18,44,.78) 55%,rgba(5,18,44,.3)),url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero h1{font-weight:800;letter-spacing:-.045em;margin:15px 0 24px}.hero p{max-width:610px;color:#e4eaf1}.hero .btn{margin-top:15px}
+.btn{font-weight:600;transition:transform .2s,filter .2s}.btn:hover{filter:brightness(.9);transform:translateY(-2px)}
+#about .container{max-width:950px}#about p{max-width:850px;color:var(--color-muted)}
+.dark-bg{background:var(--color-dark)}.dark-bg h2{color:#fff}.dark-bg .card{background:#fff}
+#services .grid{gap:22px}#services .card{min-height:225px;transition:transform .2s,box-shadow .2s}#services .card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,.13)}
+.card h3{font-size:18px}.card p{font-size:14px;color:var(--color-muted)}
+.service-icon{background:var(--color-surface);color:var(--color-primary)}
+#work .card{border-top:4px solid var(--color-primary)}#contact{border-top:1px solid var(--color-border)}
+a:focus-visible{outline:3px solid var(--color-primary);outline-offset:3px}
+@media(max-width:900px){header nav{justify-content:flex-start}header nav strong{width:100%;margin-bottom:6px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.hero{min-height:480px}.hero h1{font-size:clamp(35px,9vw,52px)}.grid{grid-template-columns:1fr}header nav{gap:12px}header nav a{font-size:12px}section{padding:55px 0}}
